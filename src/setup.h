@@ -147,8 +147,8 @@ ccs811.start(CCS811_MODE_1SEC);
   #endif // c_MCP23017
 
   #if c_BME280 == 1
-    bme.begin(0x77, &Wire);
-    //bme.begin();
+    bme.begin(0x76, &Wire); //bme.begin(0x7/, &Wire); //если не заработало с 0х76
+   
   #endif //c_BME280
 
 
